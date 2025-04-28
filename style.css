@@ -1,58 +1,68 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-image: url('https://i.imgur.com/U9KcuRz.jpg');
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #2d2d2d;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #333;
 }
 
-.container {
-    background: rgba(255, 255, 255, 0.8);
-    margin: 3rem auto;
-    padding: 2rem 3rem;
-    max-width: 900px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
 }
 
 header {
     text-align: center;
-    margin-bottom: 3rem;
+    padding: 50px 20px;
 }
 
 header h1 {
-    font-size: 2.8rem;
-    color: #B42E2E;
+    font-size: 3em;
+    color: #C71585;
 }
 
 header p {
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 
-section {
-    margin-bottom: 3rem;
+main {
+    padding: 20px 40px;
 }
 
-h2 {
-    color: #8E44AD;
-    margin-bottom: 1rem;
+section.planning {
+    margin-bottom: 60px;
+}
+
+section.planning h2 {
+    color: #B22222;
+    margin-bottom: 20px;
+}
+
+.image-ville {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
-strong {
-    color: #2C3E50;
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 1em;
 }
+
