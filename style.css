@@ -5,7 +5,7 @@ body, html {
 }
 
 .hero {
-    background-image: url('background.jpg');
+    background-image: url('web.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
