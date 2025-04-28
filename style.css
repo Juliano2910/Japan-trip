@@ -1,87 +1,90 @@
-/* Nouveau style.css complet avec sakura et animation */
-
-/* Reset */
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* style.css - Design adapte a ton modele japonais */
 
 body {
-  font-family: 'Kaushan Script', cursive;
-  background: url('web.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('web.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
-h1, h2 {
-  margin-top: 20px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
 }
 
-p {
-  margin: 10px 20px;
-  font-size: 1.2em;
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffb3b3;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 button {
-  margin: 20px;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  background-color: #e60000;
-  color: white;
-  font-size: 1.1em;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+    background-color: #ff4d4d;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #b30000;
+    background-color: #e60000;
 }
 
-img {
-  max-width: 90%;
-  border-radius: 20px;
-  margin: 20px 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.fade-in {
-  animation: fadeIn 2s ease-in forwards;
-  opacity: 0;
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 30px;
 }
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+img.planning, img.galerie {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
 }
 
-/* Sakura falling */
-.sakura {
-  position: fixed;
-  top: -50px;
-  background-image: url('https://i.imgur.com/cyXJ4lM.png'); /* pétale de sakura transparent */
-  width: 25px;
-  height: 25px;
-  background-size: cover;
-  animation: fall linear infinite;
-  opacity: 0.8;
-  z-index: 999;
+/* Ancre douce */
+html {
+    scroll-behavior: smooth;
 }
 
-@keyframes fall {
-  0% {transform: translateY(0) rotate(0deg);}
-  100% {transform: translateY(100vh) rotate(360deg);}
-}
-
-/* Crée plusieurs sakura */
-.sakura:nth-child(1) { left: 10%; animation-duration: 12s; }
-.sakura:nth-child(2) { left: 25%; animation-duration: 15s; }
-.sakura:nth-child(3) { left: 40%; animation-duration: 10s; }
-.sakura:nth-child(4) { left: 55%; animation-duration: 20s; }
-.sakura:nth-child(5) { left: 70%; animation-duration: 18s; }
-.sakura:nth-child(6) { left: 85%; animation-duration: 14s; }
