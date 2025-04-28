@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #2d2d2d;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #C71585;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+section.planning {
+    margin-bottom: 60px;
+}
+
+section.planning h2 {
+    color: #B22222;
+    margin-bottom: 20px;
+}
+
+.image-ville {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 1em;
+}
+
