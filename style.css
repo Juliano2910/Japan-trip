@@ -1,11 +1,13 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Kiwi Maru', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+    scroll-behavior: smooth;
+    background-color: #fffafa;
 }
 
 .hero {
-    background-image: url('Web.jpg');
+    background-image: url('web.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -15,6 +17,7 @@ body, html {
     align-items: center;
     color: white;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .overlay {
@@ -32,6 +35,8 @@ body, html {
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    letter-spacing: 3px;
+    animation: fadeDown 1.5s ease-in-out;
 }
 
 p {
@@ -49,16 +54,18 @@ p {
     text-decoration: none;
     margin: 0 10px;
     border-radius: 30px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn:hover {
     background: #a30008;
+    transform: scale(1.05);
 }
 
 .section {
     padding: 60px 20px;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .section-img {
@@ -67,6 +74,11 @@ p {
     margin: 20px auto;
     display: block;
     border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.section-img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -75,5 +87,23 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
