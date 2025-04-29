@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyage au Japon 🎌</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voyage au Japon - Joyeux Anniversaire Fio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="hero">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>🇯🇵 Joyeux Anniversaire Fio !</h1>
-            <p>Ta famille et tes amis ont organisé cette magnifique aventure au Japon pour toi 🌸✨</p>
-            <div class="buttons">
-                <a href="#planning" class="btn">🗺️ Découvrir le Planning</a>
-                <a href="#galerie" class="btn">📸 Voir la Galerie</a>
-            </div>
-        </div>
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="#hero" class="logo">Fio au Japon</a>
+      <div class="nav-links">
+        <a href="#planning">Planning</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#carte">Carte</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="container">
+    <h1>Joyeux Anniversaire Fio</h1>
+    <p>Une aventure inoubliable t'attend au Japon.</p>
+    <a href="#planning" class="btn-primary">Découvrir le planning</a>
+  </div>
+</section>
+
+<section id="planning" class="section">
+  <div class="container">
+    <h2>Planning Tokyo</h2>
+    <div class="text-block">
+      <p><strong>Jour 1 :</strong> Arrivée à Tokyo – Asakusa et temple Senso-ji.</p>
+      <p><strong>Jour 2 :</strong> Akihabara : mangas, arcades, cafés à thème.</p>
+      <p><strong>Jour 3 :</strong> Shibuya Crossing et Shibuya Sky.</p>
+      <p><strong>Jour 4 :</strong> Nature à Ueno Park et musées.</p>
     </div>
 
-    <section id="planning" class="section reveal">
-        <h2>🗾 Planning Tokyo</h2>
-        <p><strong>Jour 1 :</strong> Arrivée à Tokyo – Balade dans Asakusa et visite du temple Senso-ji.</p>
-        <p><strong>Jour 2 :</strong> Découverte d’Akihabara, ses mangas, ses arcades et ses cafés à thème.</p>
-        <p><strong>Jour 3 :</strong> Traversée du Shibuya Crossing et visite de la tour Shibuya Sky.</p>
-        <p><strong>Jour 4 :</strong> Journée nature à Ueno Park et découverte de musées uniques.</p>
-        <img src="tokyo.jpg" alt="Tokyo" class="section-img">
-
-        <h2>⛩️ Planning Kyoto</h2>
-        <p><strong>Jour 5 :</strong> Promenade sous les 10,000 torii de Fushimi Inari-taisha.</p>
-        <p><strong>Jour 6 :</strong> Immersion dans la forêt de bambous d’Arashiyama et visite des singes.</p>
-        <p><strong>Jour 7 :</strong> Exploration des temples : Kiyomizu-dera et balade dans Gion (quartier des geishas).</p>
-        <p><strong>Jour 8 :</strong> Relaxation le long du Philosopher’s Path et découverte artisanale.</p>
-        <img src="kyoto.jpg" alt="Kyoto" class="section-img">
-    </section>
-
-    <section id="galerie" class="section reveal">
-        <h2>📸 Souvenirs du Japon</h2>
-        <div class="carousel">
-            <img src="tokyo.jpg" alt="Tokyo 1" class="carousel-item active">
-            <img src="kyoto.jpg" alt="Kyoto 1" class="carousel-item">
-            <img src="web.jpg" alt="Web" class="carousel-item">
-        </div>
-        <p>Un avant-goût des merveilles que tu vas vivre ✨.</p>
-    </section>
-
-    <section class="section reveal" id="map">
-        <h2>🗺️ Ton Voyage</h2>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1Us1Zad5k1_oQrZqD4S7CqcuSLOI&hl=fr" 
-                width="640" 
-                height="480">
-            </iframe>
-        </div>
-    </section>
-
-    <footer>
-        <p>🎂 Avec amour de ta famille et tes amis | 🇯🇵 Bon voyage !</p>
-    </footer>
-
-    <!-- Popup de fin -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h2>🎉 On t'aime Fio ! 🎉</h2>
-            <p>Merci d'être exceptionnelle ❤️</p>
-        </div>
+    <h2>Planning Kyoto</h2>
+    <div class="text-block">
+      <p><strong>Jour 5 :</strong> Fushimi Inari-taisha et ses 10 000 torii.</p>
+      <p><strong>Jour 6 :</strong> Bambouseraie d’Arashiyama et les singes.</p>
+      <p><strong>Jour 7 :</strong> Temples Kiyomizu-dera et Gion.</p>
+      <p><strong>Jour 8 :</strong> Philosopher’s Path et artisanat local.</p>
     </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section id="galerie" class="section gray-bg">
+  <div class="container">
+    <h2>Souvenirs du Japon</h2>
+    <div class="carousel">
+      <img src="tokyo.jpg" alt="Tokyo" class="carousel-item active">
+      <img src="kyoto.jpg" alt="Kyoto" class="carousel-item">
+      <img src="web.jpg" alt="Japon" class="carousel-item">
+    </div>
+  </div>
+</section>
+
+<section id="carte" class="section">
+  <div class="container">
+    <h2>Ton Voyage</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1Us1Zad5k1_oQrZqD4S7CqcuSLOI&hl=fr" 
+        width="640" 
+        height="480">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="banniere-fin" class="section gray-bg">
+  <div class="container">
+    <h2>On t'aime Fio</h2>
+    <p>Merci d’être une personne exceptionnelle. Bon voyage !</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Avec amour de ta famille et tes amis | © 2025</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
 
