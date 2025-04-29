@@ -54,7 +54,11 @@ nav a {
 
 #hero {
   height: 100vh;
-  background: #ffffff url('wave.jpg.avif') center/cover no-repeat;
+  background-color: #ffffff;
+  background-image: url('wave.jpg.avif');
+  background-repeat: repeat;
+  background-size: 300px; /* ou ajuster plus petit ou plus grand */
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
