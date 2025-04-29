@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <section id="planning" class="section">
+    <section id="planning" class="section reveal">
         <h2>🗾 Planning Tokyo</h2>
         <p><strong>Jour 1 :</strong> Arrivée à Tokyo – Balade dans Asakusa et visite du temple Senso-ji.</p>
         <p><strong>Jour 2 :</strong> Découverte d’Akihabara, ses mangas, ses arcades et ses cafés à thème.</p>
@@ -37,14 +37,40 @@
         <img src="kyoto.jpg" alt="Kyoto" class="section-img">
     </section>
 
-    <section id="galerie" class="section">
+    <section id="galerie" class="section reveal">
         <h2>📸 Souvenirs du Japon</h2>
-        <p>Un avant-goût des merveilles que tu vas vivre ✨. (Photos à venir !) </p>
+        <div class="carousel">
+            <img src="tokyo.jpg" alt="Tokyo 1" class="carousel-item active">
+            <img src="kyoto.jpg" alt="Kyoto 1" class="carousel-item">
+            <img src="web.jpg" alt="Web" class="carousel-item">
+        </div>
+        <p>Un avant-goût des merveilles que tu vas vivre ✨.</p>
+    </section>
+
+    <section class="section reveal" id="map">
+        <h2>🗺️ Ton Voyage</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/d/embed?mid=1Us1Zad5k1_oQrZqD4S7CqcuSLOI&hl=fr" 
+                width="640" 
+                height="480">
+            </iframe>
+        </div>
     </section>
 
     <footer>
         <p>🎂 Avec amour de ta famille et tes amis | 🇯🇵 Bon voyage !</p>
     </footer>
 
+    <!-- Popup de fin -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>🎉 On t'aime Fio ! 🎉</h2>
+            <p>Merci d'être exceptionnelle ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
