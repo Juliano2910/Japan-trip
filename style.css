@@ -152,3 +152,42 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.row .text {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.row .text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.row .text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.row .image {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.row .image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
