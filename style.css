@@ -4,10 +4,12 @@ body, html {
     font-family: 'Noto Serif JP', serif;
     scroll-behavior: smooth;
     background-color: #fffafa;
+    overflow-x: hidden;
 }
 
 .hero {
     background-image: url('web.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -36,7 +38,6 @@ h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     letter-spacing: 3px;
-    animation: fadeDown 1.5s ease-in-out;
 }
 
 p {
@@ -65,7 +66,6 @@ p {
 .section {
     padding: 60px 20px;
     text-align: center;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .section-img {
@@ -81,6 +81,38 @@ p {
     transform: scale(1.05);
 }
 
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+    display: none;
+    border-radius: 20px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* Map */
+.map-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+iframe {
+    width: 90%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Footer */
 footer {
     background: #222;
     color: white;
@@ -88,21 +120,48 @@ footer {
     text-align: center;
 }
 
-/* Animations */
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.popup-content h2 {
+    color: #e60012;
+}
+
+/* Animation */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-@keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Reveal on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
