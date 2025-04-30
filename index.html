@@ -129,13 +129,18 @@
   </div>
 </section>
 
-<section id="galerie" class="section gray-bg">
+<section id="famille-amis" class="section gray-bg">
   <div class="container">
-    <h2>Souvenirs du Japon</h2>
-    <div class="carousel">
-      <img src="tokyo.jpg" alt="Tokyo" class="carousel-item active">
-      <img src="kyoto.jpg" alt="Kyoto" class="carousel-item">
-      <img src="web.jpg" alt="Japon" class="carousel-item">
+    <h2>De la part de ta famille et de tes amis</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="prevSlide()">←</button>
+      <div class="carousel-track">
+        <img src="famille1.jpg" alt="Photo famille 1" class="carousel-photo active">
+        <img src="famille2.jpg" alt="Photo famille 2" class="carousel-photo">
+        <img src="famille3.jpg" alt="Photo amis 1" class="carousel-photo">
+        <!-- Ajoute autant de photos que tu veux ici -->
+      </div>
+      <button class="carousel-btn right" onclick="nextSlide()">→</button>
     </div>
   </div>
 </section>
@@ -167,6 +172,30 @@
 </footer>
 
 <script src="script.js"></script>
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-photo');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Initial display
+  showSlide(currentSlide);
+</script>
 </body>
 </html>
 
