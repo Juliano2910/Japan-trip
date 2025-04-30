@@ -55,8 +55,8 @@ nav a {
 #hero {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url('fuji.jpg?v=1'); /* <-- forcer le navigateur à ignorer le cache */
-  background-size: contain;
+  background-image: url('flou.jpg?v=1'); /* ← nouvelle image, cache contourné */
+  background-size: cover; /* remplissage complet */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
