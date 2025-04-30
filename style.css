@@ -220,3 +220,22 @@ footer {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+.btn-gift {
+  display: inline-block;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #ff7f50, #e60012);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gift:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
