@@ -55,8 +55,8 @@ nav a {
 #hero {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url('back.jpg');
-  background-size: contain; /* préserve les proportions de l'image */
+  background-image: url('back.jpg?v=1'); /* <-- forcer le navigateur à ignorer le cache */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -64,7 +64,7 @@ nav a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #e60012; /* rouge japonais pour tout le texte */
+  color: #e60012;
   padding-top: 80px;
   position: relative;
 }
