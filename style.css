@@ -55,8 +55,11 @@ nav a {
 #hero {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url('banniere.jpg');
+  background-image: url('back.jpg');
+  background-size: contain; /* préserve les proportions de l'image */
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
