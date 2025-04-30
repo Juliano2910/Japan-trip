@@ -55,8 +55,8 @@ nav a {
 #hero {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url('flou.jpg?v=1'); /* ← nouvelle image, cache contourné */
-  background-size: cover; /* remplissage complet */
+  background-image: url('flou.jpg?v=1');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -67,6 +67,7 @@ nav a {
   color: #111;
   padding-top: 80px;
   position: relative;
+  overflow: hidden;
 }
 
 #hero h1 {
@@ -197,11 +198,6 @@ footer {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-#hero {
-  position: relative;
-  overflow: hidden;
 }
 
 .hero-overlay {
