@@ -308,29 +308,3 @@ body {
   z-index: 0;
   overflow-x: hidden;
 }
-
-.train-transition {
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-  background: transparent;
-  margin-top: -30px;
-  margin-bottom: 40px;
-}
-
-.train {
-  position: absolute;
-  height: 80px;
-  animation: train-move 6s linear forwards;
-  z-index: 2;
-}
-
-@keyframes train-move {
-  0% {
-    left: -200px;
-  }
-  100% {
-    left: 110%;
-  }
-}
