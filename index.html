@@ -8,7 +8,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- ... tout ton contenu ici ... -->
+
+  <!-- Ton JS pour le carrousel si tu l'utilises toujours -->
+  <script src="script.js"></script>
+
+  <!-- 🌸 Sakura JS -->
+  <script src="https://unpkg.com/sakura-js/dist/sakura.min.js"></script>
+  <script>
+    const sakura = new Sakura('body', {
+      colors: [
+        {
+          gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+          gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+          gradientColorDegree: 120,
+        }
+      ],
+      maxSize: 14,
+      minSize: 9,
+      fallSpeed: 1.2
+    });
+  </script>
+
+</body>
+</html>
   
 <p style="color:red; font-weight:bold;">TEST STYLE</p>
 
