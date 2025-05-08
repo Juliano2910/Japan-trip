@@ -308,3 +308,15 @@ body {
   z-index: 0;
   overflow-x: hidden;
 }
+
+.hero-photo-full {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
