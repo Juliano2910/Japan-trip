@@ -320,4 +320,29 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.parchemin-style {
+  background: #f9f1e7;
+  border: 2px solid #e0c9a6;
+  border-radius: 20px;
+  padding: 60px 30px;
+  color: #5a3e1b;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.parchemin-style h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.parchemin-noms {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
 
