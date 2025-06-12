@@ -68,7 +68,7 @@ nav a {
   text-align: center;
   color: #111;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* ← important pour éviter la coupure sur mobile */
 }
 
 #hero h1 {
